@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/nerd_prac_style.css">
     <title>Nerd Practitioner</title>
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
   </head>
   <body>
       <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">NERD PRACTITIONER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,28 +28,18 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">About</a>
+              <a class="nav-link" href="#bio">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+
           </ul>
         <!--SOCIAL ICONS-->
-          <div>
     <!-- Add font awesome icons -->
-            <a href="https://www.facebook.com/matthewleeholmes" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/mlholmes91" target="_blank" class="fa fa-twitter"></a>
+          <div class="social_icon">
+            <a href="https://www.facebook.com/matthewleeholmes" target="_blank" class="fa fa-facebook" ></a>
+            <a href="https://twitter.com/mlholmes91" target="_blank" class="fa fa-twitter style="color:#fff""></a>
             <a href="https://www.linkedin.com/in/matthew-holmes-59746b1b/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/NerdPractitioner" target="_blank" class="fa fa-github"></a>
           </div>
@@ -67,64 +57,40 @@
           </div>
       <!-- /JUMBOTRON HEADER-->
       <!-- ABOUT ME Columns-->
-      <div class="container">
+      <div id="bio" class="container-fluid bg-light">
             <div class="row">
-              <div class="col">
-                1 of 2
+              <div class="col-sm ">
+                <img class="profile m-3 img-fluid d-block rounded-circle border border-secondary" src="img/Profile Pic.jpg" alt="profile picture" >
               </div>
-              <div class="col-6">
-                Here is a little about me. 
+              <div class="col-sm-6 ml-1">
+                <h3>Bio</h3>
+                <p>Here is a little about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum ligula sit amet ex sodales rutrum. Integer enim tortor, interdum quis neque eget, vestibulum auctor leo. Maecenas porta nibh magna, vitae consequat mi feugiat ac. Nullam iaculis tincidunt risus, non vulputate leo fringilla dictum. Cras scelerisque lectus ipsum, nec viverra neque laoreet ut. Aliquam sit amet finibus mauris. Nam congue, nisi non rutrum sollicitudin, tellus velit volutpat mi, vitae eleifend sem ipsum vitae neque. In metus felis, bibendum eget congue vitae, bibendum at orci. Ut pharetra, ex non pellentesque dapibus, augue nulla ultrices est, dapibus semper eros purus non ipsum. Quisque a tortor a neque vehicula placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
               </div>
-              <div class="col">
-                  Skill cards, maybe use button effect
+              <div class="col-sm">
+                  <h3>Skills</h3>
+                  <a href="#" class="badge badge-primary">HTML/CSS</a>
+                  <a href="#" class="badge badge-secondary">JavaScript</a>
+                  <a href="#" class="badge badge-success">Python</a>
+                  <a href="https://getbootstrap.com/" class="badge badge-danger">Bootstrap</a>
+                  <a href="#" class="badge badge-warning">STATA</a>
+                  <a href="#" class="badge badge-info">GitHub</a>
+                  <a href="#" class="badge badge-light">SQL</a>
+                  <a href="#" class="badge badge-dark">JSON</a>
               </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
 
       <!-- /ABOUT ME-->
       <!-- SKILLS CARD DECKS-->
-      <div id="skills" class="card-deck">
+      <div class="container-fluid  bg-light border-dark">
+      <h1 class="text-center">Projects</h1><br>
+      <div id="projects" class="card-deck">
+
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Project 1</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
               <div class="card-footer">
@@ -134,7 +100,7 @@
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Project 2</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="card-footer">
@@ -144,7 +110,7 @@
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Project 3</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               </div>
               <div class="card-footer">
@@ -152,7 +118,27 @@
               </div>
             </div>
           </div>
+        </div>
         <!-- /SKILLS CARD DECK-->
+        <!--FOOTER-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Footer Here</h1>
+              <p class="lead">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </p>
+            </div>
+          </div>
+
+        <!--/FOOTER-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
