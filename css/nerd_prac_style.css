@@ -3,3 +3,7 @@
 .social_icon a {
 	color:#fff;
 }
+
+#more {
+	display: none;
+}

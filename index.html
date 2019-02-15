@@ -39,7 +39,7 @@
     <!-- Add font awesome icons -->
           <div class="social_icon">
             <a href="https://www.facebook.com/matthewleeholmes" target="_blank" class="fa fa-facebook" ></a>
-            <a href="https://twitter.com/mlholmes91" target="_blank" class="fa fa-twitter style="color:#fff""></a>
+            <a href="https://twitter.com/mlholmes91" target="_blank" class="fa fa-twitter "></a>
             <a href="https://www.linkedin.com/in/matthew-holmes-59746b1b/" target="_blank" class="fa fa-linkedin"></a>
             <a href="https://github.com/NerdPractitioner" target="_blank" class="fa fa-github"></a>
           </div>
@@ -60,18 +60,23 @@
       <div id="bio" class="container-fluid bg-light">
             <div class="row">
               <div class="col-sm ">
-                <img class="profile m-3 img-fluid d-block rounded-circle border border-secondary" src="img/Profile Pic.jpg" alt="profile picture" >
+                <img id="profile-img" class="profile m-3 img-fluid d-block rounded-circle border border-secondary" src="img/Profile Pic.jpg" alt="profile picture" >
               </div>
               <div class="col-sm-6 ml-1">
                 <h3>Bio</h3>
                 <p>Matthew Holmes is a full stack developer specializing in Python with a Bachelors of Science in Economics (focused in Management) from Oregon State University. <br><br>
                  
-                  Matthew completed this degree program and his software training while working full time and taking a full course load. During this time he worked in the insurance and financial services industry as a licensed agent for AAA Oregon Idaho. There he learned principals of risk analysis, how to deliver an exceptional customer and end user experience and how to work in a high stress, heavily regulated environment.<br><br> 
+                  Matthew completed this degree program and his software training while working full time and taking a full course load. 
+                  During this time he worked in the insurance and financial services industry as a licensed agent for AAA Oregon Idaho. 
+                  There he learned principals of risk analysis, how to deliver an exceptional customer and end user experience and how to work in a high stress, heavily regulated environment.<span id="dots">...</span><span id="more"><br><br> 
                   
-                  In addition to his technical experience Matthew is an artist and a lover of all things nerdy. He learned to draw from studying D&D books and developed his passion for problem solving from playing Clue Finders on his Windows 95. <br><br>
+                  In addition to his technical experience Matthew is an artist and a lover of all things nerdy. 
+                  He learned to draw from studying D&D books and developed his passion for problem solving from playing Clue Finders on his Windows 95. <br><br>
                   
-                  Matthew is a lifelong learner who has a passion for mentoring others and helping introverts like himself embrace their strengths through his website (nerd practitioner). Matthew is currently seeking employment as a mid level full stack software engineer and is focused on finding a diverse team that values collaboration, mentor-ship, continuous improvement and putting others first.  </p>
-              </div>
+                  Matthew is a lifelong learner who has a passion for mentoring others and helping introverts like himself embrace their strengths through his website (nerd practitioner).
+                  Matthew is currently seeking employment as a mid level full stack software engineer and is focused on finding a diverse team that values collaboration, mentor-ship, continuous improvement and putting others first.</span></p>
+                  <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-info">Read more</button>
+                </div>
               <div class="col-sm">
                   <h3>Skills</h3>
                   <a href="https://www.w3.org/standards/webdesign/htmlcss" class="badge badge-primary">HTML/CSS</a>
@@ -149,6 +154,23 @@
         <!--/FOOTER-->
 
     <!-- Optional JavaScript -->
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
