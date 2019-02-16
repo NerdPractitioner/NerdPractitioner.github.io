@@ -26,3 +26,10 @@ a, a:hover, a:focus{
 #projects {
 	margin-top: 2em;
 }
+
+#banner {
+	background-image: url("../img/backgrounds-blank-blue-953214.jpg");
+	background-size: cover;
+	color: #fff;
+
+}
