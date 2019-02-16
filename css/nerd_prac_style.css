@@ -1,5 +1,7 @@
 
-
+#profile-image {
+	
+}
 .social_icon a {
 	color:#fff;
 }
@@ -8,3 +10,13 @@
 	display: none;
 }
 
+#profile {
+	min-height: 100%;
+}
+
+
+
+a, a:hover, a:focus{
+
+	text-decoration: none;
+}
